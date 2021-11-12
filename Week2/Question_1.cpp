@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int binary_search(int *arr, int st, int en, int k){
@@ -32,14 +32,14 @@ int repeating_element_count(int *arr, int n,int k){
 
 int main(){
     int t, n, i, k;
-    cin >> t; // input number of testcases
+    cin >> t; 
     while(t>0){
-        cin >> n; // input number of values in array
+        cin >> n; 
         int* arr = new int[n];
         for(i=0; i<n; ++i){
-            cin >> arr[i]; // input array values
+            cin >> arr[i];
         }
-        cin >> k; // input element to search
+        cin >> k;
         int res = repeating_element_count(arr, n, k);
         if(res!=-1){
             cout << k << " - " << res << '\n';

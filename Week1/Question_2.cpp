@@ -1,4 +1,5 @@
 /*
+ * Binary Search
  * Given an already shorted array of positive numbers, design an algorithm and
  * implement it using a program to find whether given key element is presnet in
  * the array or not. Also, find the total number of comparsions for each input
@@ -15,19 +16,17 @@ void binary(vector<int> &arr, int key)
     while (l <= r)
     {
         int mid = (l + r) / 2;
-        // cout<<arr[mid]<<"\n";
-        if (++comp && arr[mid] == key)
+        comp++;
+        if (arr[mid] == key)
         {
-            cout << key << " is present\n";
-            cout << "Total comparisions = " << comp;
+            cout << "Present " << comp << endl;
             return;
         }
         else if(key>arr[mid])
             l=mid+1;
         else r=mid-1;
     }
-    cout<<key <<" is not present\n";
-    cout<<"Total comparisions = "<<comp;
+    cout << "Not Present " << comp << endl;
 }
 
 int main()

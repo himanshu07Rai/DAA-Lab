@@ -20,14 +20,14 @@ int pair_count(int *arr, int n, int k){
 
 int main(){
     int t, n, i, k;
-    cin >> t; // input number of testcases
+    cin >> t;
     while(t>0){
-        cin >> n; // input number of values in array
+        cin >> n;
         int* arr = new int[n];
         for(i=0; i<n; ++i){
-            cin >> arr[i]; // input array values
+            cin >> arr[i];
         }
-        cin >> k; // input element to search
+        cin >> k; 
         int res = pair_count(arr, n, k);
         cout << res << endl;
         --t;

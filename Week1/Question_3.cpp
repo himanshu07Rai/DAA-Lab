@@ -17,13 +17,11 @@ void jump(vector<int>& arr,int key)
     {
         if(++comp && arr[i]==key)
         {
-            cout << key << " is present\n";
-            cout << "Total comparisions = " << comp;
+            cout << "Present " << comp << endl;
             return;
         }
     }
-    cout<<key <<" is not present\n";
-    cout<<"Total comparisions = "<<comp;
+    cout << "Not Present " << comp << endl;
 
 }
 

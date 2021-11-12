@@ -1,5 +1,6 @@
 
 /*
+ * Linear Search
  * Given an array of nonnegative integers, design a linear algorithm and
  * implement it using a program to find whether given key element is persent in
  * the array or not. Also find the total number of comparisions for each input
